@@ -1,6 +1,8 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Home</ion-title>
+  <ion-toolbar color="secondary">
+    <ion-title color="tertiary" mode="md" class="ion-text-center">Home</ion-title>
+    <ion-icon name="person-outline" color="tertiary" slot="end" class="ion-padding" size="large"></ion-icon>
+    <ion-icon name="menu" color="tertiary" slot="start" size="large" class="ion-padding"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
@@ -9,8 +11,8 @@
   <h1>App de Ejemplo</h1>
  </ion-text>
  <ion-list  lines="full" inset="true">
-  <ion-list-header mode="ios" color="warning">
-    <ion-label >Menú</ion-label>
+  <ion-list-header mode="ios" color="primary">
+    <ion-label color="light">Menú</ion-label>
   </ion-list-header>
   <ion-item detail="true" routerLink="/botones">
     <ion-label>Botones</ion-label>
