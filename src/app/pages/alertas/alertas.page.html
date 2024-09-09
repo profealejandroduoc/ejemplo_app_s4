@@ -4,4 +4,24 @@
   <ion-text color="primary" class="ion-text-center">
     <h1>Página de Alertas</h1>
   </ion-text>
+  <ion-button id="btnAlerta" expand="block" fill="solid" >
+    In Line Alert
+  </ion-button>
+  <ion-alert
+    trigger="btnAlerta"
+    header="Alerta In Line"
+    subHeader="Nuevo en Ionic"
+    message="Aquí escriba lo que quiera"
+    [buttons]="alertButtons"
+    backdropDismiss="false"
+    >
+    
+</ion-alert>
+
+<ion-button (click)="mostrarAlerta($event)" expand="block" fill="outline" id="alertitas">
+  Alerta Controller
+</ion-button>
+<ion-text color="primary">
+  <p>{{accion}}</p>
+</ion-text>
 </ion-content>
